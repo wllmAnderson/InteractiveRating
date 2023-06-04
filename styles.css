@@ -1,0 +1,14 @@
+body {
+  color: blue;
+   width: 1440px;
+    border: 1px;
+    padding: 50px;
+    margin: 20px;
+    background-color:darkgray;
+}
+h1 {
+  color:white;
+}
+h2 {
+  color:lightgray;
+}
