@@ -1,5 +1,5 @@
 body {
-  color: blue;
+  color:white;
    width: 400px;
     border: 1px;
     padding: 50px;
@@ -25,8 +25,9 @@ body {
   text-align:left;
 }
 #form {
-  text-align: right;
+  text-align:center;
   display: inline;
+
 }
 h1 {
   color:white;
