@@ -32,24 +32,34 @@
   improve our offering!
   </textarea>
   
-<form action="/action_page.php" id="form" target="_blank">
-  <input type="radio" id="button1" name="1" value="1">
-  <label for="1">1</label>
-  <input type="radio" id="button2" name="1" value="2">
-  <label for="2">2</label>
-  <input type="radio" id="button3" name="1" value="3">
-  <label for="3">3</label>
-  <input type="radio" id="button4" name="1" value="4">
-  <label for="4">4</label>
-  <input type="radio" id="button5" name="1" value="5">
-  <label for="5">5</label>
-</form>
- <a href="./thank-you.html"><input type="submit" id="submit"/>
+
+ 
+Gender:
+<input type="radio" name="gender" value="1">1
+<input type="radio" name="gender" value="2">2
+<input type="radio" name="gender" value="3">3
+<input type="radio" name="gender" value="4">4
+<input type="radio" name="gender" value="5">5
+<br>
+<a href="./thank-you.html">
+<button type="button" onclick="displayRadioValue()">
+  Submit
+</button>
 </a>
+<br>
+<div id="result"></div>
+<script>
+  function displayRadioValue() {
+      var ele = document.getElementsByName('gender');
 
+      for (i = 0; i < ele.length; i++) {
+          if (ele[i].checked)
+              document.getElementById("result").innerHTML
+                  = "Gender: " + ele[i].value;
+      }
+  }
+</script>
 
-
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/wllmAnderson">William Anderson</a>.
